@@ -49,7 +49,7 @@ html(lang='en')
                 each update in serviceAlerts
                   tr
                     td !{update.alert.header_text.translation[0].text}
-                    td= update.alert.description_text.translation[0].text
+                    td !{update.alert.description_text.translation[0].text}
                     td
                       a(href=update.alert.url.translation[0].text) Details
           h2 Trip Updates
@@ -64,7 +64,7 @@ html(lang='en')
                 each update in tripUpdates
                   tr
                     td= update.trainNumber
-                    td= update.trip_update.vehicle.label
+                    td !{update.trip_update.vehicle.label}
                     td= update.totalDelay
 
     script.
