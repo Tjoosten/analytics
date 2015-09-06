@@ -7,7 +7,7 @@ var DATA_REFRESH_INTERVAL_IN_SECONDS = 60;
 
 render();
 
-setTimeout(function () {
+setInterval(function () {
   render();
 }, DATA_REFRESH_INTERVAL_IN_SECONDS * 1000);
 
