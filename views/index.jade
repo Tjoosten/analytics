@@ -44,13 +44,11 @@ html(lang='en')
                 tr
                   th Route Name
                   th Description
-                  th Stop ID
               tbody.servicesUpdate
                 each update in serviceAlerts
                   tr
                     td !{update.alert.header_text.translation[0].text}
                     td !{update.alert.description_text.translation[0].text}
-                    td !{update.alert.informed_entity[0].stop_id}
           h2 Trip Updates
           div
             table.table.table-striped
